@@ -40,7 +40,7 @@ def multigame():
             print("You've already guessed that. Try again.")
 
 def singlegame():
-    with open('C:/Users/lordnishant/Desktop/words_dictionary.json','r') as file:
+    with open('words_dictionary.json','r') as file:
         word_dict = json.load(file)
     original_list = list(word_dict.keys())
     word_list = [word for word in original_list if 4<=len(word)<=7]
